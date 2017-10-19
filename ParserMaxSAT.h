@@ -36,8 +36,8 @@
 #include "core/SolverTypes.h"
 #include "utils/ParseUtils.h"
 
-using NSPACE::mkLit;
-using NSPACE::StreamBuffer;
+using Minisat::mkLit;
+using Minisat::StreamBuffer;
 
 namespace openwbo {
 

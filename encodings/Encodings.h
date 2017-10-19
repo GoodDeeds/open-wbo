@@ -37,12 +37,12 @@
 #include "../MaxTypes.h"
 #include "core/SolverTypes.h"
 
-using NSPACE::vec;
-using NSPACE::Lit;
-using NSPACE::mkLit;
-using NSPACE::lit_Error;
-using NSPACE::lit_Undef;
-using NSPACE::Solver;
+using Minisat::vec;
+using Minisat::Lit;
+using Minisat::mkLit;
+using Minisat::lit_Error;
+using Minisat::lit_Undef;
+using Minisat::Solver;
 
 namespace openwbo {
 
@@ -69,7 +69,7 @@ public:
   // Creates a new variable in the SAT solver
   void newSATVariable(Solver *S) {
 #ifdef SIMP
-    ((NSPACE::SimpSolver *)S)->newVar();
+    ((Minisat::SimpSolver *)S)->newVar();
 #else
     S->newVar();
 #endif

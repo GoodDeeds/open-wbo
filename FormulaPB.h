@@ -34,8 +34,8 @@
 #include "core/Solver.h"
 #endif
 
-using NSPACE::vec;
-using NSPACE::Lit;
+using Minisat::vec;
+using Minisat::Lit;
 
 namespace openwbo {
 

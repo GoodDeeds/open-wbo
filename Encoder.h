@@ -45,9 +45,9 @@
 #include "encodings/Enc_SWC.h"
 #include "encodings/Enc_Totalizer.h"
 
-using NSPACE::vec;
-using NSPACE::Lit;
-using NSPACE::Solver;
+using Minisat::vec;
+using Minisat::Lit;
+using Minisat::Solver;
 
 namespace openwbo {
 

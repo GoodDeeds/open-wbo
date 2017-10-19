@@ -40,7 +40,7 @@
 
 #include "MaxSATFormula.h"
 
-using NSPACE::vec;
+using Minisat::vec;
 using std::cout;
 using std::endl;
 

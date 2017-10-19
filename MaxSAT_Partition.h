@@ -35,7 +35,7 @@
 
 #include <gmpxx.h>
 
-using NSPACE::Var;
+using Minisat::Var;
 
 namespace openwbo {
 

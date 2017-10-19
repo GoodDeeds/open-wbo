@@ -64,13 +64,13 @@
 #define SATVER VER_(SOLVERNAME)
 #define VER VER_(VERSION)
 
-using NSPACE::cpuTime;
-using NSPACE::OutOfMemoryException;
-using NSPACE::IntOption;
-using NSPACE::BoolOption;
-using NSPACE::StringOption;
-using NSPACE::IntRange;
-using NSPACE::parseOptions;
+using Minisat::cpuTime;
+using Minisat::OutOfMemoryException;
+using Minisat::IntOption;
+using Minisat::BoolOption;
+using Minisat::StringOption;
+using Minisat::IntRange;
+using Minisat::parseOptions;
 using namespace openwbo;
 
 //=================================================================================================
@@ -95,7 +95,7 @@ int main(int argc, char **argv) {
   printf("c Contact:\t open-wbo@sat.inesc-id.pt -- "
          "http://sat.inesc-id.pt/open-wbo/\nc\n");
   try {
-    NSPACE::setUsageHelp("c USAGE: %s [options] <input-file>\n\n");
+    Minisat::setUsageHelp("c USAGE: %s [options] <input-file>\n\n");
 
 #if defined(__linux__)
     fpu_control_t oldcw, newcw;

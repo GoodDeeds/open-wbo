@@ -54,7 +54,7 @@ void MaxSAT::setInitialTime(double initial) {
 Solver *MaxSAT::newSATSolver() {
 
 #ifdef SIMP
-  NSPACE::SimpSolver *S = new NSPACE::SimpSolver();
+  Minisat::SimpSolver *S = new Minisat::SimpSolver();
 #else
   Solver *S = new Solver();
 #endif
@@ -66,7 +66,7 @@ Solver *MaxSAT::newSATSolver() {
 void MaxSAT::newSATVariable(Solver *S) {
 
 #ifdef SIMP
-  ((NSPACE::SimpSolver *)S)->newVar();
+  ((Minisat::SimpSolver *)S)->newVar();
 #else
   S->newVar();
 #endif
@@ -82,7 +82,7 @@ lbool MaxSAT::searchSATSolver(Solver *S, vec<Lit> &assumptions, bool pre) {
 // should be frozen.
 
 #ifdef SIMP
-  lbool res = ((NSPACE::SimpSolver *)S)->solveLimited(assumptions, pre);
+  lbool res = ((Minisat::SimpSolver *)S)->solveLimited(assumptions, pre);
 #else
   lbool res = S->solveLimited(assumptions);
 #endif

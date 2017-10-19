@@ -45,13 +45,13 @@
 #include <utility>
 #include <vector>
 
-using NSPACE::vec;
-using NSPACE::Lit;
-using NSPACE::lit_Undef;
-using NSPACE::mkLit;
-using NSPACE::lbool;
-using NSPACE::Solver;
-using NSPACE::cpuTime;
+using Minisat::vec;
+using Minisat::Lit;
+using Minisat::lit_Undef;
+using Minisat::mkLit;
+using Minisat::lbool;
+using Minisat::Solver;
+using Minisat::cpuTime;
 
 namespace openwbo {
 

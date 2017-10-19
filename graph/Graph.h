@@ -34,7 +34,7 @@
 #include "mtl/Vec.h"
 
 using namespace std;
-using NSPACE::vec;
+using Minisat::vec;
 
 namespace openwbo {
 

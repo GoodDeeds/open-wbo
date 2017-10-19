@@ -40,8 +40,8 @@
 #include <set>
 #include <vector>
 
-using NSPACE::vec;
-using NSPACE::Lit;
+using Minisat::vec;
+using Minisat::Lit;
 
 namespace openwbo {
 

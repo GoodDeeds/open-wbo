@@ -40,10 +40,10 @@
 #include <map>
 #include <string>
 
-using NSPACE::vec;
-using NSPACE::Lit;
-using NSPACE::lit_Undef;
-using NSPACE::mkLit;
+using Minisat::vec;
+using Minisat::Lit;
+using Minisat::lit_Undef;
+using Minisat::mkLit;
 
 namespace openwbo {
 

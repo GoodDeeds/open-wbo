@@ -31,8 +31,8 @@
 #include "../Encoder.h"
 #include <deque>
 
-using NSPACE::vec;
-using NSPACE::Lit;
+using Minisat::vec;
+using Minisat::Lit;
 
 namespace openwbo {
 
